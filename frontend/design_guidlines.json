@@ -1,0 +1,133 @@
+{
+  "project_name": "VVR Projects - Industrial Engineering Portfolio",
+  "design_philosophy": {
+    "theme": "The Performance Pro (Industrial Variant)",
+    "vibe": "Rugged, Precise, High-Safety, Engineering-First",
+    "core_principles": [
+      "Fusion over Imitation: Mix Industrial Brutalism with Swiss Precision.",
+      "Emotion First: Every pixel conveys 'Trust in High-Risk Environments'.",
+      "Content is King: Directed storytelling, no filler.",
+      "Contrast: High-visibility accents against deep industrial darks."
+    ],
+    "anti_patterns": [
+      "No generic 'Corporate Blue' as primary.",
+      "No rounded 'SaaS' cards (use sharp or chamfered edges).",
+      "No 'Inter' for headings.",
+      "No standard Bootstrap grids."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Barlow Condensed, sans-serif",
+      "body": "DM Sans, sans-serif",
+      "technical": "JetBrains Mono, monospace"
+    },
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=DM+Sans:opsz,wght@9..40,400;500;700&family=JetBrains+Mono:wght@400;500&display=swap",
+    "usage_rules": {
+      "headings": "Uppercase, tracking-tight, font-weight 700 or 900. Use for H1-H3.",
+      "body": "Clean, readable, slightly loose leading. Use for paragraphs.",
+      "technical": "Use for specs, GST numbers, coordinates, and data tables. Small size, uppercase."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": "#FACC15",
+      "primary_foreground": "#000000",
+      "secondary": "#94A3B8",
+      "secondary_foreground": "#0F172A",
+      "background": "#0F172A",
+      "foreground": "#F8FAFC",
+      "card": "#1E293B",
+      "card_foreground": "#F8FAFC",
+      "border": "#334155",
+      "accent": "#F97316",
+      "muted": "#1E293B",
+      "muted_foreground": "#94A3B8"
+    },
+    "utility": {
+      "safety_yellow": "#FACC15",
+      "blaze_orange": "#F97316",
+      "steel_grey": "#94A3B8",
+      "deep_charcoal": "#0F172A",
+      "pure_white": "#FFFFFF"
+    },
+    "gradients": {
+      "industrial_shine": "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%)",
+      "hazard_stripes": "repeating-linear-gradient(45deg, #FACC15, #FACC15 10px, #000 10px, #000 20px)"
+    }
+  },
+  "layout_strategies": {
+    "grid_system": "Bento Grid (Mode A: Tetris)",
+    "container_padding": "p-6 md:p-12 lg:p-20",
+    "spacing_scale": {
+      "section_gap": "gap-24",
+      "element_gap": "gap-8"
+    },
+    "border_radius": {
+      "cards": "rounded-none",
+      "buttons": "rounded-none",
+      "inputs": "rounded-none"
+    }
+  },
+  "visual_enhancers": {
+    "textures": [
+      "Subtle noise overlay on dark backgrounds.",
+      "Grid lines (1px dashed #334155) in background."
+    ],
+    "micro_interactions": [
+      "Hover on cards: Border color change to Safety Yellow.",
+      "Buttons: Slide-up fill effect.",
+      "Scroll: Parallax on large text."
+    ],
+    "shadows": "None. Use borders and contrast."
+  },
+  "components": {
+    "buttons": {
+      "style": "Solid rectangular, no radius. Uppercase text.",
+      "primary": "bg-primary text-black hover:bg-white transition-colors duration-300",
+      "secondary": "border border-white/20 text-white hover:border-primary hover:text-primary"
+    },
+    "cards": {
+      "style": "Flat, dark background (slate-900), 1px border (slate-700).",
+      "hover": "hover:border-primary transition-colors duration-300 group"
+    },
+    "forms": {
+      "style": "Brutalist. 1px solid border, sharp edges, large padding.",
+      "focus": "focus:ring-0 focus:border-primary"
+    },
+    "navigation": {
+      "style": "Fixed, glassmorphism (slate-900/90), backdrop-blur-md, bottom border 1px slate-800."
+    }
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1759847552281-60e45956124d?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "welding_sparks": "https://images.unsplash.com/photo-1764245546004-e6b743242a80?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "high_risk_work": "https://images.unsplash.com/photo-1759367902849-87e82720c313?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "safety_heights": "https://images.unsplash.com/photo-1767793357572-7f282da502d3?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "engineering_tools": "https://images.unsplash.com/photo-1562568068-7a90cf9e499d?crop=entropy&cs=srgb&fm=jpg&q=85"
+  },
+  "universal_guidelines": {
+    "do_not_use": [
+      "Gradients for text",
+      "Rounded corners > 4px",
+      "Centered text for long paragraphs",
+      "Generic 'Lorem Ipsum' (Use real content provided)",
+      "Standard 'Inter' font for headings"
+    ],
+    "accessibility": {
+      "contrast_check": "Ensure yellow text is on dark background, or black text on yellow background.",
+      "motion_reduction": "Respect prefers-reduced-motion."
+    },
+    "testing": "All interactive elements must have data-testid attributes."
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Tailwind config with the specified colors and fonts first.",
+    "2. Install 'framer-motion' and 'lucide-react' if not present.",
+    "3. Build the 'Layout' component with the persistent Navigation and Footer.",
+    "4. Implement the 'Hero' section with the video/image background and massive typography.",
+    "5. Use the 'Bento Grid' strategy for the Services section.",
+    "6. Ensure all forms map to the 'Contact' requirements (Email integration readiness).",
+    "7. Use the provided image URLs strictly.",
+    "8. Add 'data-testid' to everything."
+  ]
+}
